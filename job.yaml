@@ -9,6 +9,6 @@ spec:
       - name: kube-hunter
         image: aquasec/kube-hunter 
         command: ["python", "kube-hunter.py"]
-        args: ["--pod"]
+        args: ["--pod","--report","json"]
       restartPolicy: Never
   backoffLimit: 4
