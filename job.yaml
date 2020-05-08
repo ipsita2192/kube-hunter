@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: kube-hunter
-        image: aquasec/kube-hunter 
+        image: 127.0.0.1:5000/kube-hunter:latest
         command: ["python", "kube-hunter.py"]
         args: ["--pod","--report","json"]
       restartPolicy: Never
